@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="containerPlayer">
+      <div id="test"></div>
+      <audio id="player" controls autoplay>
+        <source
+          id="srcP"
+          src="https://hts04.kshost.com.br:10952/live"
+          type="audio/mpeg"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+        <script>
+          document.addEventListener("click", function () {
+            document.getElementById("player").play();
+          });
+        </script>
+      </audio>
+    </div>
+  </body>
+</html>
