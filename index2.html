@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Brasil Sul</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="containerPlayer">
-      <div id="test"></div>
-      <audio id="player" controls autoplay>
-        <source
-          id="srcP"
-          src="https://hts04.kshost.com.br:10952/live"
-          type="audio/mpeg"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
-        <script>
-          document.addEventListener("click", function () {
-            document.getElementById("player").play();
-          });
-        </script>
-      </audio>
-    </div>
+    <button type="button" class="btn2">Play</button>
+
+    <audio controls autoplay>
+      <source src="https://hts04.kshost.com.br:10952/live" type="audio/mpeg" />
+    </audio>
+    <script>
+      window.addEventListener("click", function () {
+        var audioPlayer = document.querySelector("audio");
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+        }
+      });
+    </script>
   </body>
 </html>
