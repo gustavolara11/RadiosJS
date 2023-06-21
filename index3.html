@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parar som!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button type="button" class="btn2">Play</button>
+
+    <audio controls autoplay>
+      <source src="sound.wav" type="audio/mpeg" />
+    </audio>
+    <script>
+      window.addEventListener("click", function () {
+        var audioPlayer = document.querySelector("audio");
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+        }
+      });
+    </script>
+  </body>
+</html>

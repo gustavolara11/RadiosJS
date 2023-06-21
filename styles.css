@@ -17,9 +17,3 @@ body {
   width: 90vw;
   height: 90vh;
 }
-
-iframe {
-  align-items: center;
-  width: 80%;
-  height: auto;
-}
